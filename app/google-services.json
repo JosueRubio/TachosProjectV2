@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "469024669487",
+    "firebase_url": "https://tachosprojectapp.firebaseio.com",
+    "project_id": "tachosprojectapp",
+    "storage_bucket": "tachosprojectapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469024669487:android:172180768680a80f",
+        "android_client_info": {
+          "package_name": "com.example.tachosprojectv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469024669487-04ma3nmfrpv63niqqnkpj3oio8a7iek0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tachosprojectv2",
+            "certificate_hash": "9f9a30a395b81b311be40df8f153f3aeac9128a1"
+          }
+        },
+        {
+          "client_id": "469024669487-fk5015qp6s087nh15ifb8g7kqcc79c8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX9nlBw1neEqVhea4N6Vfly0YCgt1l2To"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469024669487-fk5015qp6s087nh15ifb8g7kqcc79c8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

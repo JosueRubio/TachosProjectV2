@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_madera3"
+    tools:context=".tab_registro2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/corner_white_bkg"
+        android:backgroundTint="#ffffff"
+        android:fillViewport="true"
+        android:padding="4dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt-estadia_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Administracion"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txt-tipo-registro-tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                android:text="Tipo de registro"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_below="@id/txt-estadia_tab2"/>
+
+            <Spinner
+                android:id="@+id/sp_registro_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="20dp"
+                android:layout_below="@id/txt-tipo-registro-tab">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/txt-caravanac_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Identificador de caravana"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_below="@id/sp_registro_tab" />
+
+            <Spinner
+                android:id="@+id/sp_color_caravana_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="20dp"
+                android:layout_below="@id/txt-caravanac_tab2">
+            </Spinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_ord_llegada_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_below="@+id/sp_color_caravana_tab">
+
+                <EditText
+                    android:id="@+id/edt_orden_llegada_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="20dp"
+                    android:ems="10"
+                    android:hint="Orden de llegada"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="#F44336"
+                    android:textSize="18sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_espacio_a_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_below="@+id/ll_tiporeg_tab">
+
+                <EditText
+                    android:id="@+id/edt_espacio_asig_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:ems="8"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:inputType="number"
+                    android:hint="Espacio asignado"
+                    android:textSize="18sp"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"/>
+            </android.support.design.widget.TextInputLayout> -->
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
