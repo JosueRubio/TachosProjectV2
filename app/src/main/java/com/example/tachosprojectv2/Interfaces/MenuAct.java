@@ -1,6 +1,7 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Interfaces;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import android.view.Menu;
@@ -14,15 +15,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 
+import com.example.tachosprojectv2.Interfaces.Fragments.estado_disp;
+import com.example.tachosprojectv2.Interfaces.Fragments.estado_ocup;
+import com.example.tachosprojectv2.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 
 public class MenuAct extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, estado_disp.OnFragmentInteractionListener,
+        estado_ocup.OnFragmentInteractionListener {
 
-    Button btnNuevoReg, btnDisponibilidad, btnReservaciones, btnEventuales, btnIngresos, btnNotas,btnEstadisticas;
+    estado_disp fragDisponibilidad;
+    estado_ocup fragOcupados;
 
+    Button btnNuevoReg,btnOcupados, btnDisponibilidad, btnReservaciones, btnEventuales, btnIngresos, btnNotas,btnEstadisticas;
+    FloatingActionButton fabRegistro;
+    public static NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,15 +43,30 @@ public class MenuAct extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+         navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
+        fragDisponibilidad = new estado_disp();
+        fragOcupados = new estado_ocup();
+//        getSupportFragmentManager().beginTransaction().add(R.id.ll_disponibilidad,fragDisponibilidad).commit();
+
+
+        fabRegistro = (FloatingActionButton) findViewById(R.id.fab_nuevo_reg);
         btnNuevoReg = (Button) findViewById(R.id.btn_nuevo_reg);
         btnReservaciones = (Button) findViewById(R.id.btn_reservaciones);
+        btnOcupados = (Button) findViewById(R.id.btn_ocupados);
+
+        fabRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                registroAct();
+                tabRegAct();
+            }
+        });
 
         btnNuevoReg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,11 +87,14 @@ public class MenuAct extends AppCompatActivity
 
     }
 
+
+
     private void Ingresar() {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
 //        finish();
     }
+
 
     @Override
     public void onBackPressed() {
@@ -105,17 +134,21 @@ public class MenuAct extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+//        getSupportFragmentManager().beginTransaction().add(R.id.ll_disponibilidad,fragDisponibilidad).commit();
+        FragmentManager fragmentManager = getSupportFragmentManager();
 
-        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_tools) {
+        if (id == R.id.nav_disponibilidad) {
+            fragmentManager.beginTransaction().replace(R.id.drawer_layout, new estado_disp()).addToBackStack(null).commit();
+        } else if (id == R.id.nav_contabilidad) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_estadisticas) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_perfiles) {
+
+        } else if (id == R.id.nav_notas) {
+
+        } else if (id == R.id.nav_cerrarses) {
 
         }
 
@@ -134,5 +167,9 @@ public class MenuAct extends AppCompatActivity
         startActivity(tabs);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 }
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_madera1"
-    tools:context=".LoginAct"
+    tools:context=".Interfaces.LoginAct"
     android:orientation="vertical">
 
     <TextView

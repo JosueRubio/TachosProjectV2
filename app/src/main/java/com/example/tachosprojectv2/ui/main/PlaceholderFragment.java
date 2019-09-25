@@ -12,12 +12,12 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.tachosprojectv2.R;
-import com.example.tachosprojectv2.TabRegistro3;
-import com.example.tachosprojectv2.tab_registro1;
-import com.example.tachosprojectv2.tab_registro2;
-import com.example.tachosprojectv2.tab_registro4;
-import com.example.tachosprojectv2.tab_registro5;
-import com.example.tachosprojectv2.tab_registro6;
+import com.example.tachosprojectv2.Interfaces.Fragments.TabRegistro3;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro1;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro2;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro4;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro5;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro6;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -36,8 +36,8 @@ public class PlaceholderFragment extends Fragment {
             case 2: fragment = new tab_registro2(); break;
             case 3: fragment = new TabRegistro3(); break;
             case 4: fragment = new tab_registro4(); break;
-            case 5: fragment = new tab_registro5(); break;
-            case 6: fragment = new tab_registro6(); break;
+//            case 5: fragment = new tab_registro5(); break;
+//            case 6: fragment = new tab_registro6(); break;
         }
         return fragment;
     }

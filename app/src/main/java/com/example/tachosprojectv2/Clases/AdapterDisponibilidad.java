@@ -1,19 +1,19 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Clases;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.tachosprojectv2.Model.ModeloControl;
+import com.example.tachosprojectv2.R;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 
 import java.util.ArrayList;
-
-import static com.example.tachosprojectv2.R.color.colorAccent;
 
 
 public class AdapterDisponibilidad extends RecyclerView.Adapter<AdapterDisponibilidad.ImageViewHolder>{

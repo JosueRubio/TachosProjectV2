@@ -1,16 +1,30 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Interfaces.Fragments;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-import androidx.fragment.app.Fragment;
+import com.example.tachosprojectv2.Interfaces.MainActivity;
+import com.example.tachosprojectv2.R;
 
 
-public class tab_registro5 extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ * Activities that contain this fragment must implement the
+ * {@link estado_ocup.OnFragmentInteractionListener} interface
+ * to handle interaction events.
+ * Use the {@link estado_ocup#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class estado_ocup extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -22,9 +36,10 @@ public class tab_registro5 extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public tab_registro5() {
+    public estado_ocup() {
         // Required empty public constructor
     }
+
 
     /**
      * Use this factory method to create a new instance of
@@ -32,11 +47,11 @@ public class tab_registro5 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment tab_registro5.
+     * @return A new instance of fragment estado_ocup.
      */
     // TODO: Rename and change types and number of parameters
-    public static tab_registro5 newInstance(String param1, String param2) {
-        tab_registro5 fragment = new tab_registro5();
+    public static estado_ocup newInstance(String param1, String param2) {
+        estado_ocup fragment = new estado_ocup();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -44,20 +59,41 @@ public class tab_registro5 extends Fragment {
         return fragment;
     }
 
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        if (getArguments() != null) {
+//            mParam1 = getArguments().getString(ARG_PARAM1);
+//            mParam2 = getArguments().getString(ARG_PARAM2);
+//        }
+//    }
+
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        View V = getView();
+        ImageView btnBack;
+        btnBack = V.findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().beginTransaction().replace(R.id.drawer_layout,new estado_disp()).addToBackStack(null).commit();
+
+            }
+        });
+
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab_registro5, container, false);
+        return inflater.inflate(R.layout.fragment_estado_ocup, container, false);
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

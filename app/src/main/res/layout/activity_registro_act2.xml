@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroAct2"
+    tools:context=".Interfaces.RegistroAct2"
     android:background="@drawable/fondo_bahia1">
 
 

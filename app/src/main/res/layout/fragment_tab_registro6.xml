@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_madera3"
-    tools:context=".tab_registro6">
+    tools:context=".Interfaces.Fragments.tab_registro6">
 
     <ScrollView
         android:layout_width="match_parent"

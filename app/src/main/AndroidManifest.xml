@@ -9,22 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Interfaces.DisponibilidadAct"></activity>
         <activity
-            android:name=".resgiter"
+            android:name=".Interfaces.resgiter"
             android:label="@string/title_activity_resgiter"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".MenuAct"
+            android:name=".Interfaces.MenuAct"
             android:label="@string/title_activity_menu"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".TabRegistro"
+            android:name=".Interfaces.TabRegistro"
             android:label="@string/title_activity_tab_registro"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".RegistroAct2" />
-        <activity android:name=".RegistroAct" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginAct">
+        <activity android:name=".Interfaces.RegistroAct2" />
+        <activity android:name=".Interfaces.RegistroAct" />
+        <activity android:name=".Interfaces.MainActivity" />
+        <activity android:name=".Interfaces.LoginAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

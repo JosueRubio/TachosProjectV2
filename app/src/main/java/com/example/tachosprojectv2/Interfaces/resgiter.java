@@ -1,7 +1,8 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Interfaces;
 
 import android.os.Bundle;
 
+import com.example.tachosprojectv2.R;
 import com.example.tachosprojectv2.ui.main.SectionsPagerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;

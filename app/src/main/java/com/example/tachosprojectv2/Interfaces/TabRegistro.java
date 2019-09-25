@@ -1,4 +1,4 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Interfaces;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,6 +9,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.tachosprojectv2.Interfaces.Fragments.TabRegistro3;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro1;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro2;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro4;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro5;
+import com.example.tachosprojectv2.Interfaces.Fragments.tab_registro6;
+import com.example.tachosprojectv2.R;
 import com.example.tachosprojectv2.ui.main.SectionsPagerAdapter;
 
 public class TabRegistro extends AppCompatActivity implements tab_registro1.OnFragmentInteractionListener, tab_registro2.OnFragmentInteractionListener,
@@ -34,7 +41,7 @@ public class TabRegistro extends AppCompatActivity implements tab_registro1.OnFr
     }
 
     private void agregarIndicadorPuntos(int pos) {
-        puntosSlide = new TextView[6];
+        puntosSlide = new TextView[4];
         linearPuntos.removeAllViews();
 
         for (int i = 0; i < puntosSlide.length; i++){

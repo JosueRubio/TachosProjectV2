@@ -18,12 +18,17 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Espacios disponibles</string>
-    <string name="menu_gallery">Espacios ocupados</string>
-    <string name="menu_slideshow">Cuentas</string>
-    <string name="menu_tools">Reporte</string>
-    <string name="menu_share">Cerrar sesion</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_disponibilidad">Disponibilidad</string>
+    <string name="menu_contabilidad">Contabilidad</string>
+    <string name="menu_estadisticas">Estadisticas</string>
+    <string name="menu_cuentas">Cuentas</string>
+    <string name="menu_notas">Notas</string>
+    <string name="menu_cerrarsesion">Cerrar sesion</string>
     <string name="title_activity_resgiter">resgiter</string>
     <string name="title_activity_menu_act_principal">MenuActPrincipal</string>
+    <string name="tipo_de_registro">Tipo de registro</string>
+    <string name="administracion">Administracion</string>
+    <string name="identificador_de_caravana">Identificador de caravana</string>
+    <string name="orden_de_llegada">Orden de llegada</string>
+    <string name="title_activity_menu_act2">MenuAct2</string>
 </resources>

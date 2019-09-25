@@ -1,6 +1,8 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Interfaces;
 
 import android.os.Bundle;
+
+import com.example.tachosprojectv2.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 

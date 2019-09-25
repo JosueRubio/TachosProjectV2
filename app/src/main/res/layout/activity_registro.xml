@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_bahia1"
     android:orientation="vertical"
-    tools:context=".RegistroAct">
+    tools:context=".Interfaces.RegistroAct">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_registro"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -53,7 +53,7 @@
             app:layout_constraintVertical_bias="0.013"
             tools:layout_editor_absoluteX="0dp" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_ord_llegada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                 android:textColorHint="#F44336"
                 android:textSize="18sp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/txt-tipo-registro"
@@ -128,7 +128,7 @@
                 android:textColor="@color/colorPrimaryDark"/>
         </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_nom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -152,9 +152,9 @@
                 android:textColorHint="#F44336"
                 android:textSize="18sp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_tel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -178,9 +178,9 @@
                 android:textColorHint="#F44336"
                 android:textSize="18sp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -204,9 +204,9 @@
                 android:textColorHint="#F44336"
                 android:textSize="18sp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_pais"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -230,9 +230,9 @@
                 android:textColorHint="#F44336"
                 android:textSize="18sp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_estado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -256,7 +256,7 @@
                 android:textColorHint="#F44336"
                 android:textSize="18sp" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btn_sig_registro"
@@ -277,8 +277,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.030" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

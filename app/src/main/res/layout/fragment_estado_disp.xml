@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_madera3"
+    tools:context=".Interfaces.Fragments.estado_disp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/corner_white_bkg"
+        android:backgroundTint="#ffffff"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="top|center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:text="Estado de disponibilidad"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_vertodo"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:background="@drawable/corner_right_left"
+            android:gravity="center"
+            android:backgroundTint="#4e12a5"
+            android:text="Ver todo"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_vacantes"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:background="@drawable/corner_left_right"
+            android:gravity="center"
+            android:backgroundTint="#058b34"
+            android:text="Vacantes"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_ocupados"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:background="@drawable/corner_right_left"
+            android:gravity="center"
+            android:backgroundTint="#e74c3c"
+            android:text="Ocupados"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</FrameLayout>

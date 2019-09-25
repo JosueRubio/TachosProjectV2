@@ -1,9 +1,11 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Interfaces;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.tachosprojectv2.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 

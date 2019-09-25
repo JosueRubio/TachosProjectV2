@@ -1,4 +1,4 @@
-package com.example.tachosprojectv2;
+package com.example.tachosprojectv2.Model;
 
 public class ModeloControl {
 

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuAct"
+    tools:context=".Interfaces.MenuAct"
     android:background="@drawable/fondo_bahia1">
 
     <com.google.android.material.appbar.AppBarLayout
