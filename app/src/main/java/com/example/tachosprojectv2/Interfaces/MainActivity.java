@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity implements AdapterDisponibil
 
     }
 
-
     public void msj(String mensaje){
         Toast.makeText(this,mensaje,Toast.LENGTH_LONG).show();
     }

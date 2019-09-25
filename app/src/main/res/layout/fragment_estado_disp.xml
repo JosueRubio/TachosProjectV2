@@ -6,6 +6,7 @@
     android:background="@drawable/fondo_madera3"
     tools:context=".Interfaces.Fragments.estado_disp">
 
+
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
