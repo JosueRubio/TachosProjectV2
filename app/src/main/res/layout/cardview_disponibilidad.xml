@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv-llegada"
+                android:id="@+id/tv_llegada"
                 android:textColor="#000000"
                 android:text="000"
                 android:gravity="center"
@@ -73,15 +73,17 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv-nom"
+                android:id="@+id/tv_nom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="Nombre"
-                android:textColor="#000000"
+                android:textColor="#AA4378"
+                android:textSize="18sp"
                 android:gravity="center"/>
 
             <TextView
-                android:id="@+id/tv-tipoRes"
+                android:id="@+id/tv_tipoRes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tipo"

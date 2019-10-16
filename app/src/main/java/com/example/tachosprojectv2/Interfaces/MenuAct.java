@@ -81,7 +81,7 @@ public class MenuAct extends AppCompatActivity
         btnReservaciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tabRegAct();
+//                tabRegAct();
             }
         });
 

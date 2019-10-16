@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.tachosprojectv2.Model.ModeloControl;
 import com.example.tachosprojectv2.R;
@@ -46,6 +47,10 @@ public class AdapterDisponibilidad extends RecyclerView.Adapter<AdapterDisponibi
 
         ModeloControl uploadCurrent = mUploads.get(position);
         holder.tvEspacio.setText(String.valueOf(uploadCurrent.getEspacio()));
+        holder.tvNombre.setText(uploadCurrent.getNombre());
+        holder.tvLlegada.setText(String.valueOf(uploadCurrent.getOrdLlegada()));
+        holder.tvTipoRes.setText(uploadCurrent.getTipoReg());
+
 
         if(uploadCurrent.getOcupado().equals("SI")){
 //            holder.tvEspacio.setTextColor(Color.parseColor("#0000FF"));
@@ -61,12 +66,15 @@ public class AdapterDisponibilidad extends RecyclerView.Adapter<AdapterDisponibi
 
     public class ImageViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView tvEspacio;
+        TextView tvEspacio, tvNombre,tvLlegada,tvTipoRes; //textview agregado tvNombre, tvLlegada, tvTipoRes
         ImageView imageView2;
 
         public ImageViewHolder(View itemView) {
             super(itemView);
             tvEspacio = itemView.findViewById(R.id.tvEspacio);
+            tvNombre = itemView.findViewById(R.id.tv_nom);
+            tvLlegada = itemView.findViewById(R.id.tv_llegada);
+            tvTipoRes = itemView.findViewById(R.id.tv_tipoRes);
             imageView2 = itemView.findViewById(R.id.imageView2);
             itemView.setOnClickListener(this);
 

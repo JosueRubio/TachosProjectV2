@@ -2,16 +2,31 @@ package com.example.tachosprojectv2.Model;
 
 public class ModeloControl {
 
-    public String nombre_Cliente;
-    public int espacio;
-    public String ocupado;
+    String nombre, ocupado, tipoReg;
+    int espacio, ordLlegada;
 
-    public String getNombre_Cliente() {
-        return nombre_Cliente;
+    public String getOcupado() {
+        return ocupado;
     }
 
-    public void setNombre_Cliente(String nombre_Cliente) {
-        this.nombre_Cliente = nombre_Cliente;
+    public void setOcupado(String ocupado) {
+        this.ocupado = ocupado;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTipoReg() {
+        return tipoReg;
+    }
+
+    public void setTipoReg(String tipoReg) {
+        this.tipoReg = tipoReg;
     }
 
     public int getEspacio() {
@@ -22,11 +37,11 @@ public class ModeloControl {
         this.espacio = espacio;
     }
 
-    public String getOcupado() {
-        return ocupado;
+    public int getOrdLlegada() {
+        return ordLlegada;
     }
 
-    public void setOcupado(String ocupado) {
-        this.ocupado = ocupado;
+    public void setOrdLlegada(int ordLlegada) {
+        this.ordLlegada = ordLlegada;
     }
 }
