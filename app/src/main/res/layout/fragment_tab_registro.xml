@@ -54,7 +54,7 @@
                 tools:layout_editor_absoluteX="0dp" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_tel_tab"
+                android:id="@+id/til_estancia_tab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -65,13 +65,13 @@
                 tools:layout_editor_absoluteX="0dp">
 
                 <EditText
-                    android:id="@+id/edt_telefono_tab"
+                    android:id="@+id/edt_estancia_tab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:ems="10"
                     android:hint="Periodo de estancia"
-                    android:inputType="textPersonName"
+                    android:inputType="date"
                     android:singleLine="true"
                     android:textColor="@color/colorAccent"
                     android:textColorHint="#F44336"
@@ -80,7 +80,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_email_tab"
+                android:id="@+id/til_espacio_tab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -91,7 +91,7 @@
                 tools:layout_editor_absoluteX="0dp">
 
                 <EditText
-                    android:id="@+id/edt_correo_tab"
+                    android:id="@+id/edt_espacio_tab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"

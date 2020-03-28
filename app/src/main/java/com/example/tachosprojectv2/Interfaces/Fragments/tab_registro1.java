@@ -1,18 +1,21 @@
 package com.example.tachosprojectv2.Interfaces.Fragments;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.DatePicker;
+import android.widget.EditText;
 
 import com.example.tachosprojectv2.R;
 
 import androidx.fragment.app.Fragment;
 
 
-public class tab_registro1 extends Fragment {
+public class tab_registro1 extends Fragment implements DatePickerDialog.OnDateSetListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -52,6 +55,8 @@ public class tab_registro1 extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            //EditText editText = (EditText) tab_registro1.findViewById(R.id.edt_estancia_tab);
+
         }
     }
 
@@ -59,6 +64,8 @@ public class tab_registro1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
         return inflater.inflate(R.layout.fragment_tab_registro, container, false);
     }
 
@@ -85,7 +92,12 @@ public class tab_registro1 extends Fragment {
         super.onDetach();
         mListener = null;
     }
+    //DATEPICKERDIALOG
+    @Override
+    public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
 
+    }
+    //FIN
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
